@@ -1,0 +1,27 @@
+{% load crispy_forms_tags %}
+
+<div class="comments-title">Comments</div>
+{% for comment in user.comments.all %}
+<div class="comment-card">
+    <strong>
+        <a class="user-detail-link" href="{% url 'detail' comment.author.username %}">{{ comment.author.username }}</a>
+    </strong>
+    <p>{{ comment.text|linebreaks }}</p>
+</div>
+{% empty %}
+<p>No comments yet.</p>
+{% endfor %}
+
+
+{% if user.username != request.user.username %}
+
+<hr>
+<div class="comments-form">
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn comment-form-button">Add comment</button>
+    </form>
+</div>
+
+{% endif %}

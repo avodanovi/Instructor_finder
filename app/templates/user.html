@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_block %}
+
+<div class="container">
+    {% include '_user_profile_card.html' %}
+
+    {% include '_user_comments.html' %}
+</div>
+
+{% endblock %}

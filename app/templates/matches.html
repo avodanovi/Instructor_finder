@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block body_block %}
+<div class="container col-sm-8 col-sm-offset-2">
+    {% load crispy_forms_tags %}
+
+    <div class="row">
+        <form method="GET" class="post-form">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn comment-form-button">Find a match!</button>
+        </form>
+    </div>
+
+    {% include '_user_list_extended.html' %}
+</div>
+{% endblock %}

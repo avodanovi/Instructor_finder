@@ -1,0 +1,126 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.background-container {
+    min-height: 94%;
+    background-color: #f2f1f0;
+    padding-bottom: 50px;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.user-card{
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #22c1d7;
+    text-align: center;
+    color: white;
+}
+
+.short-info {
+    margin-top: 20px;
+}
+
+.show-more-button{
+    text-align: center;
+    color: white;
+    background-color: #22c1d7;
+    padding: 10px 10px 10px 10px;
+}
+a.user-card-link,
+a.show-more-button:hover {
+  color: inherit;
+  width: 100%
+}
+
+.card-username {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.card-name {
+    font-weight: bolder;
+    font-size: medium;
+    padding-bottom: 10px;
+}
+
+.card-text {
+    font-size: medium;
+}
+
+.card-short-info {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card-section-title {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.card-skills {
+  padding-top: 20px;
+}
+
+
+.form-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: x-large;
+    text-transform: uppercase
+}
+
+.form-button {
+    text-align: center;
+    color: white;
+    background-color: #22c1d7;
+    border: none;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    margin-top: 20px;
+}
+
+.comment-form-button {
+    text-align: center;
+    color: white;
+    background-color: #22c1d7;
+    border: none;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+.comments-form {
+}
+.comments-title {
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: x-large;
+    text-transform: uppercase
+}
+
+.comment-card {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.user-detail-link {
+    color: black;
+}

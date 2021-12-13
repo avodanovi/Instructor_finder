@@ -1,0 +1,45 @@
+<div class="row user-card">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="{{MEDIA_URL}}{{user.profile_photo}}" class="col-sm-12">
+        </div>
+
+        <div class="col-sm-6">
+            <div class="card-name">
+                {{ user.first_name}} {{ user.last_name}}
+            </div>
+            <div class="card-text">
+                {{ user.short_description }}
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 card-short-info">
+            <div class="card-username">
+                {{ user.username }}
+            </div>
+            <div class="card-text">
+                {{ user.city }}
+            </div>
+        </div>
+        <div class="col-sm-6 card-skills">
+            <div>
+                <p>
+                    <span class="card-section-title">Knows</span>
+
+                    {% for subject in user.knows.all %}
+                    <span class="badge badge-primary">{{ subject }}</span>
+                    {% endfor %}
+                </p>
+                <p>
+                    <span class="card-section-title">Learns</span>
+
+                    {% for subject in user.learns.all %}
+                    <span class="badge badge-success">{{ subject }}</span>
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
